@@ -7,6 +7,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
 import java.util.ArrayList;
+import javax.swing.JPanel;
 
 public class GarageGui extends JFrame {
 
@@ -45,9 +46,6 @@ public class GarageGui extends JFrame {
         ((JPanel) getContentPane()).setBorder(
                 BorderFactory.createEmptyBorder(25, 25, 25, 25)
         );
-
-        JPanel input = new JPanel(new GridLayout(5, 2, 10, 8));
-        input.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         txtMarke = new JTextField();
         txtModel = new JTextField();
@@ -103,8 +101,6 @@ public class GarageGui extends JFrame {
                 new String[]{"Marke","Model", "Baujahr", "Preis", "Elektro"}, 0
         );
         table = new JTable(tableModel);
-        sorter = new TableRowSorter<>(tableModel);
-        table.setRowSorter(sorter);
         sorter = new TableRowSorter<>(tableModel);
         table.setRowSorter(sorter);
 
