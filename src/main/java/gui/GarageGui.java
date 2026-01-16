@@ -28,9 +28,9 @@ public class GarageGui extends JFrame {
         initObjekte();
         initGUI();
 
-        pack();                         // ✅
-        setLocationRelativeTo(null);    // ✅ zentrieren
-        setMinimumSize(new Dimension(800, 550)); // ✅ optional, aber gut
+        pack();
+        setLocationRelativeTo(null);
+        setMinimumSize(new Dimension(800, 550)); //
     }
 
     public void initObjekte() {
