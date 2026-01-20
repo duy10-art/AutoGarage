@@ -16,15 +16,27 @@ public class Auto {
         this.elektro = elektro;
     }
 
-    public String getMarke() {return marke;}
+    public String getMarke() {
+        return marke;
+    }
 
-    public String getModel() {return model;}
+    public String getModel() {
+        return model;
+    }
 
-    public int getBaujahr() {return baujahr;}
+    public int getBaujahr() {
+        return baujahr;
+    }
 
-    public double getPreis() {return preis;}
+    public double getPreis() {
+        return preis;
+    }
 
-    public boolean isElektro() {return elektro;}
+    public boolean isElektro() {
+        return elektro;
+    }
 
-    public boolean istOldtimer() {return baujahr <= 1995;}
+    public boolean istOldtimer() {
+        return baujahr <= 1995;
+    }
 }
